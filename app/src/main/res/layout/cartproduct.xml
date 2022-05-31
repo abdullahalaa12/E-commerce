@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/cartqntadd"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="28dp"
+        android:text="+"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cartpimage"
+        app:layout_constraintTop_toBottomOf="@+id/cartpname" />
+
+    <TextView
+        android:id="@+id/cartpprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:text="Price"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cartpimage"
+        app:layout_constraintTop_toBottomOf="@+id/cartqntsub" />
+
+    <TextView
+        android:id="@+id/cartpname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cartpimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cartquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="22dp"
+        android:text="Qnt"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cartqntadd"
+        app:layout_constraintStart_toEndOf="@+id/cartqntsub"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cartpimage"
+        android:layout_width="199dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_photo_24" />
+
+    <Button
+        android:id="@+id/cartqntsub"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:text="-"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cartpimage"
+        app:layout_constraintTop_toBottomOf="@+id/cartpname" />
+
+    <ImageView
+        android:id="@+id/cartpremove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toEndOf="@+id/cartpname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

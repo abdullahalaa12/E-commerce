@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/ProfileItem"
+            android:title="Profile" />
+        <item
+            android:id="@+id/AddItem"
+            android:title="Add Product" />
+        <item
+            android:id="@+id/ShopingCart_Icon"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Cart"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/Logout"
+            android:title="Logout"
+            app:showAsAction="never" />
+    </group>
+    <group >
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/MicSearch"
+            android:icon="@drawable/ic_baseline_keyboard_voice_24"
+            android:title="Mic"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/BarcodeSearch"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="Barcode"
+            app:showAsAction="always" />
+    </group>
+
+</menu>

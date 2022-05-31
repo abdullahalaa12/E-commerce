@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">E-commerce</string>
+    <string-array name="MaleFemale">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
